@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [status, setStatus] = useState('');
@@ -6,6 +7,24 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('Invio in corso...');
+
+    // Usa le variabili d'ambiente
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,  // Variabile d'ambiente per il service_id
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,  // Variabile d'ambiente per il template_id
+      e.target,  // Il modulo di invio
+      process.env.REACT_APP_EMAILJS_USER_ID      // Variabile d'ambiente per il user_id
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        setStatus('Messaggio inviato con successo!');
+      },
+      (error) => {
+        console.log(error.text);
+        setStatus('Errore nell\'invio del messaggio. Riprova.');
+      }
+    );
   };
 
   return (
@@ -52,7 +71,7 @@ const Contact = () => {
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white" 
               rows="5" 
               placeholder="Scrivi il tuo messaggio" 
-              required 
+              required
             ></textarea>
           </div>
           <button 

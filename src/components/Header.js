@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 mb-5">
+      <header className="bg-white dark:bg-gray-900 shadow-md w-full z-50 mb-5">
         <div className="max-w-screen-xl mx-auto flex justify-between items-center p-4">
           <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
             D. Carbone
@@ -49,6 +49,16 @@ const Header = () => {
               <li><button onClick={() => scrollToSection("about")} className="hover:text-blue-500 dark:hover:text-blue-300">About</button></li>
               <li><button onClick={() => scrollToSection("languages")} className="hover:text-blue-500 dark:hover:text-blue-300">Languages</button></li>
               <li><button onClick={() => scrollToSection("works")} className="hover:text-blue-500 dark:hover:text-blue-300">Works</button></li>
+              <li>
+                <a 
+                  href="coomingsoon.html"  // Modifica con il link della tua pagina statica con "Coming Soon"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-500 dark:hover:text-blue-300"
+                >
+                  Blog
+                </a>
+              </li>
               <li><button onClick={() => scrollToSection("contact")} className="hover:text-blue-500 dark:hover:text-blue-300">Contact</button></li>
               <li>
                 <a 
@@ -86,6 +96,16 @@ const Header = () => {
             <li><button onClick={() => scrollToSection("about")} className="hover:text-blue-500 dark:hover:text-blue-300">About</button></li>
             <li><button onClick={() => scrollToSection("languages")} className="hover:text-blue-500 dark:hover:text-blue-300">Languages</button></li>
             <li><button onClick={() => scrollToSection("works")} className="hover:text-blue-500 dark:hover:text-blue-300">Works</button></li>
+            <li>
+              <a 
+                href="/coomingsoon.html"  // Modifica con il link della tua pagina statica con "Coming Soon"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-blue-500 dark:hover:text-blue-300"
+              >
+                Blog
+              </a>
+            </li>
             <li><button onClick={() => scrollToSection("contact")} className="hover:text-blue-500 dark:hover:text-blue-300">Contact</button></li>
             <li>
               <a 

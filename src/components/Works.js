@@ -1,6 +1,7 @@
 import React from 'react';
 import Plyr from 'plyr-react';
 import 'plyr-react/plyr.css';
+import { FaExternalLinkAlt } from 'react-icons/fa'; // Per l'icona di link esterno
 
 const VideoPlayer = ({ src }) => {
   const videoOptions = {
@@ -24,10 +25,10 @@ const Works = () => {
           I miei Lavori
         </h1>
         <p className="text-lg mt-4 text-gray-800 dark:text-gray-300">
-          Qui troverai una selezione dei miei progetti più significativi.
+          Qui troverai una selezione dei miei progetti più significativi. Man mano ne aggiungerò altri
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden mb-8"> {/* Margin bottom added here */}
             <div className="w-full h-48">
               <VideoPlayer src="images/project1.mp4" />
             </div>
@@ -38,26 +39,40 @@ const Works = () => {
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 Questo è uno dei miei ultimi siti sviluppati con React.js, MySQL e Node.js.
               </p>
-              <a href="/projects/project1" className="text-blue-500 hover:underline mt-4 inline-block">
-                Scopri di più
-              </a>
             </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden mb-8"> {/* Margin bottom added here */}
             <div className="w-full h-48">
               <VideoPlayer src="images/project2.mp4" />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
-                Progetto Innovativo
+                Progetto Semplice
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                Un'altra delle mie creazioni, sviluppata con tecnologie moderne come Next.js e Firebase.
+                Un Bot per le todo-list in Python
               </p>
-              <a href="/projects/project2" className="text-blue-500 hover:underline mt-4 inline-block">
-                Scopri di più
-              </a>
+            </div>
+          </div>
+
+          {/* Nuovo progetto con immagine */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer group mb-8"> {/* Margin bottom added here */}
+            <div className="relative w-full h-48">
+              <img src="/images/project1.png" alt="Progetto Chiara Lubich" className="w-full h-full object-cover group-hover:opacity-50 transition-opacity duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 group-hover:bg-opacity-75 transition-all duration-300 group-hover:scale-105">
+                <a href="https://comunita-chiara-lubich.web.app" target="_blank" rel="noopener noreferrer">
+                  <FaExternalLinkAlt className="text-white text-4xl transition-transform transform group-hover:scale-125" />
+                </a>
+              </div>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+                Comunità Chiara Lubich
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                Un sito sviluppato per la Comunità Chiara Lubich. Visita la pagina delle news.
+              </p>
             </div>
           </div>
         </div>

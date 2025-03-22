@@ -24,7 +24,8 @@ const Home = () => {
         "Programmatore full-stack",
         "Programmatore back-end",
         "Mobile IOS/Android Development",
-        "DataBase Management"
+        "DataBase Management",
+        "Linux Expert"
       ],
       typeSpeed: 100, // Velocità di scrittura
       backSpeed: 50, // Velocità di cancellazione
@@ -76,7 +77,7 @@ const Home = () => {
           <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
             {/* Pulsante per il curriculum */}
             <a
-              href="images/Curriculum Vitae Carbone Davide.pdf" // Sostituisci con il percorso corretto del tuo curriculum
+              href="Curriculum Vitae Carbone Davide.pdf" // Sostituisci con il percorso corretto del tuo curriculum
               download
               className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300 text-center sm:text-left"
             >

@@ -66,7 +66,7 @@ const Works = () => {
   />
   <div className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 group-hover:scale-105">
     {/* Icona che compare solo al passaggio del mouse */}
-    <a href="https://comunita-chiara-lubich.web.app" target="_blank" rel="noopener noreferrer">
+    <a href="https://comunitaminorichiaralubich.web.app/" target="_blank" rel="noopener noreferrer">
       <FaExternalLinkAlt className="text-white text-4xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </a>
   </div>

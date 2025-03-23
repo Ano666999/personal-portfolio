@@ -49,16 +49,7 @@ const Header = () => {
               <li><button onClick={() => scrollToSection("about")} className="hover:text-blue-500 dark:hover:text-blue-300">About</button></li>
               <li><button onClick={() => scrollToSection("languages")} className="hover:text-blue-500 dark:hover:text-blue-300">Languages</button></li>
               <li><button onClick={() => scrollToSection("works")} className="hover:text-blue-500 dark:hover:text-blue-300">Works</button></li>
-              <li>
-                <a 
-                  href="coomingsoon.html"  // Modifica con il link della tua pagina statica con "Coming Soon"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-500 dark:hover:text-blue-300"
-                >
-                  Blog
-                </a>
-              </li>
+              <li className="hover:text-blue-500 transition"><a href="https://blogcarb3.wordpress.com/" target="_blank">Blog</a></li>
               <li><button onClick={() => scrollToSection("contact")} className="hover:text-blue-500 dark:hover:text-blue-300">Contact</button></li>
               <li>
                 <a 
@@ -98,7 +89,7 @@ const Header = () => {
             <li><button onClick={() => scrollToSection("works")} className="hover:text-blue-500 dark:hover:text-blue-300">Works</button></li>
             <li>
               <a 
-                href="/coomingsoon.html"  // Modifica con il link della tua pagina statica con "Coming Soon"
+                href="https://blogcarb3.wordpress.com/"  // Modifica con il link della tua pagina statica con "Coming Soon"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-blue-500 dark:hover:text-blue-300"

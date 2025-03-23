@@ -58,20 +58,26 @@ const Works = () => {
 
           {/* Nuovo progetto con immagine */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer group mb-8"> {/* Margin bottom added here */}
-            <div className="relative w-full h-48">
-              <img src="/images/project1.png" alt="Progetto Chiara Lubich" className="w-full h-full object-cover group-hover:opacity-50 transition-opacity duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 group-hover:bg-opacity-75 transition-all duration-300 group-hover:scale-105">
-                <a href="https://comunita-chiara-lubich.web.app" target="_blank" rel="noopener noreferrer">
-                  <FaExternalLinkAlt className="text-white text-4xl transition-transform transform group-hover:scale-125" />
-                </a>
-              </div>
-            </div>
+          <div className="relative w-full h-48">
+  <img 
+    src="/images/project1.png" 
+    alt="Progetto Chiara Lubich" 
+    className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-50" 
+  />
+  <div className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 group-hover:scale-105">
+    {/* Icona che compare solo al passaggio del mouse */}
+    <a href="https://comunita-chiara-lubich.web.app" target="_blank" rel="noopener noreferrer">
+      <FaExternalLinkAlt className="text-white text-4xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    </a>
+  </div>
+</div>
+
             <div className="p-6">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
-                Comunità Chiara Lubich
+                Comunità Chiara Lubich V.2
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                Un sito sviluppato per la Comunità Chiara Lubich. Visita la pagina delle news.
+                La seconda versione del sito della comunità "Chiara Lubich"
               </p>
             </div>
           </div>
